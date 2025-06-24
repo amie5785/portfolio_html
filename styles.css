@@ -1,0 +1,486 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+  }
+  
+  /* Navbar */
+  nav {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  #hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Project Cards */
+  .project {
+    background: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 5px solid #007bff;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+  }
+  
+  footer .social a {
+    margin: 0 10px;
+    color: white;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    #hero, section {
+      padding: 2rem 1rem;
+    }
+  }
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amie Adams | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+      nav { background: #333; color: white; padding: 1em 0; text-align: center; }
+      nav a { color: white; margin: 0 1em; text-decoration: none; }
+      section { padding: 2em; max-width: 1000px; margin: auto; }
+      #hero { background: #007bff; color: white; text-align: center; padding: 4em 2em; }
+      .btn { background: white; color: #007bff; padding: 0.5em 1em; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1em; }
+      h2 { color: #007bff; }
+      .project { background: white; margin: 1em 0; padding: 1em; border-left: 5px solid #007bff; }
+      footer { background: #333; color: white; text-align: center; padding: 2em 1em; margin-top: 2em; }
+      ul { padding-left: 1em; }
+    </style>
+  </head>
+  <body>
+  
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  
+    <section id="hero">
+      <h1>Hello, I'm Amie Adams</h1>
+      <p>Aspiring Full Stack Developer passionate about building modern web apps.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </section>
+  
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm Amie Adams, a developer-in-training with a strong foundation in web technologies and a passion for solving real-world problems through elegant, responsive design. My goal is to create accessible, user-focused applications that leave a positive impact.</p>
+      <p>After over 15 years of experience in the <strong>health and finance industries</strong>, I’m transitioning into tech through hands-on learning and formal training. I’ve worked in roles that required accuracy, compliance, and clear communication—skills that directly translate into software development. My goal is to build tools that simplify complex systems, improve user experiences, and drive efficiency in everyday tasks. I’m especially passionate about creating solutions that support underserved communities and small businesses.</p>
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git/GitHub</li>
+        <li>Responsive Web Design</li>
+        <li>Basic UX/UI Principles</li>
+      </ul>
+      <h3>Education</h3>
+      <p>NPower Path2Tech, 2025 (in progress)</p>
+      <h3>Interests</h3>
+      <p>Clean, scalable frontend design, accessibility & web standards, RESTful APIs, frontend frameworks like React (in progress)</p>
+    </section>
+  
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Responsive Portfolio Website</h3>
+        <p>A personal site built using HTML5 and CSS3 showcasing my skills and background. Designed for responsiveness across all devices.</p>
+      </div>
+      <div class="project">
+        <h3>To-Do List App</h3>
+        <p>A simple task management tool built with HTML, CSS, and vanilla JavaScript. Features include task addition, deletion, and local storage.</p>
+      </div>
+      <div class="project">
+        <h3>Flexbox Frog Game Clone (UI Layout Practice)</h3>
+        <p>A fun educational clone using Flexbox to practice layout skills. Emphasized layout logic, positioning, and CSS best practices.</p>
+      </div>
+    </section>
+  
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Let’s connect! You can reach out via LinkedIn, GitHub, or email.</p>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      </ul>
+    </section>
+  
+    <footer>
+      <p>&copy; 2025 Amie Adams</p>
+    </footer>
+
+  
+  </body>
+  </html>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero */
+  .hero {
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero .btn {
+    margin-top: 1rem;
+    background: white;
+    color: #0077cc;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  /* About */
+  .about, .projects, .contact {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    background: #e0f0ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Projects */
+  .project-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  /* Contact */
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact input, .contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  footer .socials {
+    margin-top: 0.5rem;
+  }
+  
+  footer .socials a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amie Adams | Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Amie Adams</h1>
+    <p>Aspiring Full Stack Developer | Passionate about building clean, responsive web applications.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a developer with over 15 years of experience in healthcare and a deep passion for solving real-world problems through code. I enjoy bringing ideas to life using full stack technologies like HTML, CSS, JavaScript, React, and Node.js.</p>
+    <p>Career Goal: Becoming a Full Stack Developer working on meaningful, scalable products.</p>
+    <a href="https://your-resume-link.com" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React</div>
+      <div><strong>Backend:</strong> Node.js, Express.js</div>
+      <div><strong>Database:</strong> MongoDB, Firebase</div>
+      <div><strong>Version Control:</strong> Git, GitHub</div>
+      <div><strong>Tools:</strong> VS Code, Figma, Postman</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>Showcase of skills, resume, and projects. Fully responsive.</p>
+    </div>
+    <div class="project">
+      <h3>Responsive Product Landing Page</h3>
+      <p>Modern layout for a fictional product using Flexbox & Grid.</p>
+    </div>
+    <div class="project">
+      <h3>Interactive Quiz App</h3>
+      <p>JavaScript-powered quiz with score tracking and timer.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amie Adams</p>
+    <div>
+      <a href="#home">Home</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amie Adams | Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Amie Adams</h1>
+    <p>Aspiring Full Stack Developer | Passionate about building clean, responsive web applications.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a developer with over 15 years of experience in healthcare and a deep passion for solving real-world problems through code. I enjoy bringing ideas to life using full stack technologies like HTML, CSS, JavaScript, React, and Node.js.</p>
+    <p>Career Goal: Becoming a Full Stack Developer working on meaningful, scalable products.</p>
+    <a href="https://your-resume-link.com" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React</div>
+      <div><strong>Backend:</strong> Node.js, Express.js</div>
+      <div><strong>Database:</strong> MongoDB, Firebase</div>
+      <div><strong>Version Control:</strong> Git, GitHub</div>
+      <div><strong>Tools:</strong> VS Code, Figma, Postman</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>Showcase of skills, resume, and projects. Fully responsive.</p>
+    </div>
+    <div class="project">
+      <h3>Responsive Product Landing Page</h3>
+      <p>Modern layout for a fictional product using Flexbox & Grid.</p>
+    </div>
+    <div class="project">
+      <h3>Interactive Quiz App</h3>
+      <p>JavaScript-powered quiz with score tracking and timer.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="mailto:your.email@example.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amie Adams</p>
+    <div>
+      <a href="#home">Home</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
