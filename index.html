@@ -15,6 +15,10 @@
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
+      
+  
+
+
     </ul>
   </nav>
 
@@ -23,16 +27,23 @@
     <h1>Hello, I'm Amie Adams</h1>
     <p>Aspiring Full Stack Developer passionate about building modern web apps.</p>
     <a href="#projects" class="btn">View My Work</a>
+    <nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="./assets/Amie_Adams.pdf" download>Resume</a></li>
+  </ul>
+</nav>
+
   </section>
 
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello, my name is Amie Adams. I’m transitioning into the tech industry with a strong desire to learn, grow, and excel in various areas of technology. My professional background includes over 15 years in administrative roles across healthcare, billing and coding, as well as accounts payable and receivable.
+    <p>Hello, my name is Amie Adams. I’m transitioning into the tech industry with a strong desire to learn, grow, and thrive in the world of development. With over 15 years of experience in administrative roles across healthcare, billing and coding, and accounts payable/receivable, I bring a detail-oriented mindset and a deep understanding of how systems operate behind the scenes.
 
-        This foundation has equipped me with a keen eye for detail, problem-solving skills, and a deep understanding of operational systems—all of which fuel my passion for technology.
-        
-        I am now pursuing a career as a developer to understand how digital systems are built, maintained, and optimized. My goal is to learn the fundamentals of development and leverage my experience to contribute to innovative projects and tech-driven solutions.</p>
+These experiences have shaped my ability to solve problems, streamline processes, and adapt quickly—skills that naturally led me to explore how digital systems are built, maintained, and improved. Today, I’m pursuing a career in web and software development with a focus on full stack technologies, cloud integration, and user-focused design.
+
+My goal is to build a strong foundation in development while using my real-world business and operational knowledge to create smart, scalable, and human-centered solutions. I’m passionate about tech that empowers people, simplifies processes, and drives innovation—and I’m excited to continue this journey with curiosity, dedication, and a heart for impact.</p>
     <h3>Skills</h3>
     <ul>
       <li>HTML5</li>
@@ -40,9 +51,9 @@
       <li>JavaScript</li>
       <li>Git/GitHub</li>
     </ul>
-    <h3>Education</h3>
-    <p> NPower Path2Tech, 2025</p>
-    <h3>Interests</h3>
+    <h3> Education</h3>
+  <p> NPower Path2Tech, 2025</p>
+    <p>Interests</p>
     <p>Design, Accessibility, API Integration, Frontend Frameworks</p>
   </section>
 
@@ -52,14 +63,18 @@
     <div class="project">
       <h3>Project One</h3>
       <p>A brief description of what the project is and what you used.</p>
+      <img src= https://picsum.photos/seed/picsum/200/300
     </div>
     <div class="project">
       <h3>Project Two</h3>
       <p>A brief description of what the project is and what you used.</p>
+      
+    <img src="https://picsum.photos/200/300?random=2">
     </div>
     <div class="project">
       <h3>Project Three</h3>
       <p>A brief description of what the project is and what you used.</p>
+      <img src =https://picsum.photos/200
     </div>
   </section>
 
@@ -78,11 +93,84 @@
   <footer>
     <p>&copy; 2025 Amie Adams</p>
     <div class="social">
-      <a href="#">LinkedIn</a>
+      <a href="#">www.linkedin.com/in/amie-adams</a>
       <a href="#">GitHub</a>
-      <a href="#">Email</a>
+      <a href="#">amie.adams68@yahoo.com</a>
     </div>
   </footer>
 
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amie Adams | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="light-theme">
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Amie Adams</h1>
+      <nav id="nav" class="nav hidden">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle">🌙</button>
+      <button id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2 id="typewriter"></h2>
+    <p>Welcome to my developer portfolio. I specialize in building responsive full-stack applications with JavaScript, HTML/CSS, and modern frameworks.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring Full Stack Developer with a background in accounting, healthcare billing, and administrative operations. Currently enrolled in NPower's Path2Tech program, I am focused on transitioning into tech with hands-on experience in front-end development and dynamic web applications.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <label for="filter">Filter by Tech Stack:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="html">HTML</option>
+        <option value="javascript">JavaScript</option>
+        <option value="api">API</option>
+      </select>
+    </div>
+    <div id="projectCarousel" class="carousel"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <span class="error" id="nameError"></span>
+      <input type="email" id="email" placeholder="Email" required>
+      <span class="error" id="emailError"></span>
+      <textarea id="message" placeholder="Message" required></textarea>
+      <span class="error" id="messageError"></span>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amie Adams. All rights reserved.</p>
+  </footer>
 </body>
 </html>
